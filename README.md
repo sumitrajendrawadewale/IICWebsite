@@ -178,75 +178,153 @@
  
 ############################################################################################################################################################################
  
- Status Updation Form
+ **Status Updation Form**
  
  <!DOCTYPE html>
 <html>
+
 <head>
-	<style >
-		form {
-  text-align: center;
-}
-h2{
-	text-align: center;
-}
-
-	</style>
-
-
+  <title>QuickTreat</title>
+  <style type="text/css">
+  {
+  margin:0;
+  padding:0;
+  }
+  body
+  {
+  background-image:url(Background.jpg);
+  background-position:center;
+  background-size:cover;
+  font-family:sans-serif;
+  margin-top:40px;
+  }
+  .updtform{
+  width:600px;
+  background-color:rgb(0,0,0,6);
+  margin:auto;
+  color:#FFFFFF;
+  padding:5px 0px 5px 0px;
+  text-align:center;
+  border-radius:15px 15px 0px 0px;
+  }
+  .content
+  {
+  background-color:rgb(0,0,0,0.5);
+  width:600px;
+  height: 450px;
+  padding:25px 0px 5px 0px;
+  margin:auto;
+  color:#FFFFFF;
+  }
+  
+  </style>
 </head>
 <body>
-
+  <div class="updtform">
 <h2>Hospital Status Updation Form</h2>
-
-<form >
-
-  <label for="regnum">Registration Number: </label>
-  <input type="text" id="regnum" name="regnum" ><br>
- 
-  <label for="Ventilators">Ventilators Available: </label>
-    <input type="Number" id="ventnum" name="ventnum" ><br> 
-<label for="GenBeds">General Beds Available: </label>
-    <input type="Number" id="bednum" name="bednum" ><br> 
-    <label for="Isolatward">Isolation Wards Available: </label>
-    <input type="Number" id="isonum" name="isonum" ><br> 
-     <label for="ICU">ICU: </label>
-     <input type="radio" id="icu" name="avbl" value="icu">
-  <label for="icu">Yes</label>
-  <input type="radio" id="icu" name="avbl" value="icu">
-  <label for="icu">No</label>
-   <label for="ICU"> Number of Available: </label>
-  <input type="Number" id="icu1num" name="icu1num" ><br> 
- 
-
-    <h4> Other Facilities</h4>
-    
-<input type="checkbox" id="Facility2" name="Facility2" value="Laboratory">
-  <label for="Facility2"> Laboratory</label><br>
- 
-  <input type="checkbox" id="Facility3" name="Facility3" value="  PICU (Pediatrics ICU)">
-  <label for="Facility3">   PICU (Pediatrics ICU)</label><br>
-
-
-  <label for="specialistavbl">Available Specialist: </label>
-  <select name = "dropdown"> 
+</div>
+<div class="content">
+<form action="confirmupdation.html"><center>
+  <table background >
+    <div id="name">
+  
+<tr>
+ <td> <label for="regnum">Registration Number: </label> </td>
+  <td> <input type="text" id="regnum" name="regnum" > <br></td>
+ </tr>
+<tr>
+     <td><label for="specialistavbl">Available Specialist: </label></td>
+  <td><select name = "dropdown"> 
   <option value = "Orthopedic Sergon" selected>Orthopedic Sergon</option>
   <option value = "Eye Specialist">Eye Specialist</option>
-  <option value = "NeuroSergon">NeuroSergon</option> 
+  <option value = "NeuroSergon">NeuroSergon</option>  
+  <option value = "Gynacologist">Gynacologist</option>
+ <option value = "ENT">ENT Specialist</option></td>
+  </tr>
 
- 
-   <br>
-   <br>
-   <br>
+ <tr>
+   <td><label for="Ventilators">Ventilators Available: </label> </td>
+   <td>  <input type="Number" id="ventnum" name="ventnum" > <br> </td>
+    </tr>
+
+
+    <tr>
+ <td><label for="GenBeds">General Beds Available: </label> </td>
+    <td> <input type="Number" id="bednum" name="bednum" ><br>  </td>
+    </tr>
+    <tr>
+   <td><label for="ctscan">CT Scan Machine Available: </label> </td>
+   <td>  <input type="Number" id="CTnum" name="CTtnum" > <br> </td>
+    </tr>
+
+    <tr>
+   <td> <label for="Isolatward">Isolation Wards Available: </label></td>
+    <td><input type="Number" id="isonum" name="isonum" ><br> </td>
+</tr>
+<tr>
+     <td><label for="ICU">ICU: </label></td>
+    
+  <td><input type="Number" id="icu1num" name="icu1num" ><br> </td>
+     </tr>
+     
+
+  <tr>
+     <td><label for="specialistavbl">Blood Availability: </label>
+      <select name = "dropdown"> 
+  <option value = "a" >A+</option>
+  <option value = "b">A-</option>
+  <option value = "c">B+</option>
+  <option value = "c">B-</option> 
+  <option value = "c">AB+</option> 
+  <option value = "c">AB-</option> 
+  <option value = "c">O+</option> 
+  <option value = "c">O-</option>  </td>
+  <td> <input type="Number" id="Blood" name="Blood" ><br>  </td>
+
+  </tr>
+     </table>
+
+    <h4> Other Facilities:</h4>
+     <table>
+    <tr>
+<td><input type="checkbox" id="Facility2" name="Facility2" value="Laboratory"></td>
+  <td><label for="Facility2"> Laboratory</label><br></td>
+ </tr>
+ <tr>
+ <td> <input type="checkbox" id="Facility3" name="Facility3" value="  PICU (Pediatrics ICU)"></td>
+ <td> <label for="Facility3">   PICU (Pediatrics ICU)</label><br></td>
+</tr>
+ </table>
+ <table>
+  <tr>
+  <td><label for="addfacility">Add other facilities available: </label> </td>
+  <td> <input type="text" id="addfacility" name="addfacility" > <br></td>
+</tr>
+</table>
+  <br>
 
 
    <input type="submit" value="Submit"><br>
 
-  
+  </center>
+</div>
 </form> 
+</div>
+</body>
+</html>
+########################################################################################################
+**Confirm updation Message**
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QuickTreat</title>
+</head>
+<body>
+<h3> Thank You for updating the status of your hospital. Soon, overall network of QuickTreat will get updated with latest status.</h3>
 </body>
 </html>
 
+ 
 
 
