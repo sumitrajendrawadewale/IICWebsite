@@ -1,4 +1,4 @@
-Registration Page.
+**Registration Page**
 
 <!doctype html>
 <html>
@@ -98,6 +98,84 @@ Registration Page.
 </html>
 
 
+############################################################################################################################################################################
+
+**LOG IN PAGE**
+
+<!doctype html>
+<html>
+ <head>
+  <title> QuickTreat</title>
+  <style type="text/css">
+  {
+  margin:0;
+  padding:0;
+  }
+  body
+  {
+  background-image:url(wallpaper.jpg);
+  background-position:center;
+  background-size:cover;
+  font-family:sans-serif;
+  margin-top:40px;
+  }
+  .regform{
+  width:600px;
+  background-color:rgb(0,0,0,6);
+  margin:auto;
+  color:#FFFFFF;
+  padding:5px 0px 5px 0px;
+  text-align:center;
+  border-radius:15px 15px 0px 0px;
+  }
+  .main
+  {
+  background-color:rgb(0,0,0,0.5);
+  width:600px;
+  margin:auto;
+  color:#FFFFFF;
+  }
+  
+  </style>
+ </head>
+ <body>
+  <div class="regform">
+  <center><h1><br>LOG IN</h1></center>
+  </div>
+  <div class="main">
+   <form>
+   <table background >
+    <div id="name">
+	<br>
+	 <tr>
+	 <td><center><h3 class="name">Enter Hospital Name</h3></center></td>
+	 <td><center><input class="name" type="text" name="name"></center></td>
+	 </tr>
+	 
+	 
+	 <tr>
+	 <td><center><h3 class="number">Enter Password</h3></center></td>
+	 <td><center><input class="code" type="text" name="number"></center></td>
+	 </tr>
+	 
+   	</table>
+	
+	<br>
+	
+	<table> 
+	 
+	 <tr>
+	 <center><button type="submit">LOG IN</button></center>
+	 </tr>
+	 
+	</table>
+    </div>
+   </form>   
+  </div>   
+ </body> 
+</html>  
+ 
+ 
 ############################################################################################################################################################################
  
  Status Updation Form
