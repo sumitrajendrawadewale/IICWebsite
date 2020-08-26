@@ -1,3 +1,5 @@
+Registration Page.
+
 <!doctype html>
 <html>
  <head>
